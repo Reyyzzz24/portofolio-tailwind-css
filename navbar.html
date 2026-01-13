@@ -12,8 +12,12 @@
                 <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
                 <li>
                     <button id="themeToggle"
-                        class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition">
-                        <img id="themeIcon" src="images/icons/dark.svg" alt="Theme" class="w-5 h-5 dark:invert">
+                        class="relative p-5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition overflow-hidden">
+                        <img src="images/icons/dark.svg" alt="Dark Mode"
+                            class="theme-icon-dark w-5 h-5 transition-all duration-500 transform dark:rotate-90 dark:scale-0 dark:opacity-0">
+
+                        <img src="images/icons/light.svg" alt="Light Mode"
+                            class="theme-icon-light absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 transition-all duration-500 transform rotate-90 scale-0 opacity-0 dark:rotate-0 dark:scale-100 dark:opacity-100 dark:invert">
                     </button>
                 </li>
                 <li class="relative group">
@@ -84,8 +88,16 @@
             <p class="text-sm text-gray-500 mb-4 uppercase tracking-widest">Settings</p>
             <button id="themeToggleMobile"
                 class="flex items-center space-x-3 p-3 w-full rounded-xl bg-gray-100 dark:bg-gray-800 transition-colors">
-                <img src="images/icons/dark.svg" alt="Theme" class="w-6 h-6 dark:invert">
-                <span class="text-sm">Switch Theme</span>
+
+                <div class="relative w-6 h-6 flex-shrink-0 flex items-center justify-center">
+                    <img src="images/icons/dark.svg" alt="Dark Mode"
+                        class="theme-icon-dark w-6 h-6 transition-all duration-500 transform dark:rotate-90 dark:opacity-0">
+
+                    <img src="images/icons/light.svg" alt="Light Mode"
+                        class="theme-icon-light absolute w-6 h-6 transition-all duration-500 transform rotate-90 opacity-0 dark:rotate-0 dark:opacity-100 dark:invert">
+                </div>
+
+                <span class="text-sm font-medium">Switch Theme</span>
             </button>
         </div>
     </div>

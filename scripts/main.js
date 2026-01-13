@@ -43,9 +43,16 @@ function initThemeToggle() {
     toggles.forEach(btn => {
         if (btn) {
             btn.onclick = () => {
-                html.classList.toggle('dark');
-                const isDark = html.classList.contains('dark');
-                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                // HAPUS efek scale-90 di sini agar tidak ada bounce/guncangan
+                
+                // Toggle Tema secara langsung
+                if (html.classList.contains('dark')) {
+                    html.classList.remove('dark');
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    html.classList.add('dark');
+                    localStorage.setItem('theme', 'dark');
+                }
             };
         }
     });
