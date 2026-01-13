@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="./output.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+</head>
+
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+    <div id="navbar-placeholder"></div>
+
+    <section id="hero"
+        class="container mx-auto px-4 py-20 flex flex-col-reverse md:flex-row items-center justify-between">
+        <div class="md:w-1/2 mt-10 md:mt-0 text-center md:text-left">
+            <h3 class="text-blue-600 font-semibold mb-2 uppercase tracking-widest text-sm">Hello, My name is</h3>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Reva <span class="text-blue-600">Yulian Satria</span></h1>
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-lg max-w-xl">
+                I am a programmer specializing in machine learning and video editing.
+                With a strong background in developing algorithms and data analysis, I have created intelligent
+                solutions that leverage machine learning to solve complex challenges.
+                On the creative side, my video editing skills allow me to blend technology and art to produce
+                engaging and informative visual content.
+            </p>
+        </div>
+        <div class="flex justify-center md:justify-end">
+            <img src="./images/image.jpeg"
+                class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-8 border-bg-third dark:border-dark-bg-third shadow-2xl">
+        </div>
+    </section>
+
+    <section id="services" class="bg-gray-50 dark:bg-gray-800/50 py-20 transition-colors">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h3 class="text-blue-600 font-semibold uppercase tracking-widest text-sm">Services</h3>
+                <h1 class="text-4xl font-bold mt-2">Specialized In</h1>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+
+                <div
+                    class="bg-white dark:bg-gray-800 px-8 py-16 rounded-2xl border-b-4 border-green-500 shadow-sm hover:shadow-2xl transition-all duration-300 text-center group flex flex-col items-center justify-center min-h-[480px]">
+                    <div
+                        class="p-4 rounded-xl bg-green-50 dark:bg-green-900/30 text-green-600 mb-8 group-hover:rotate-12 transition-transform">
+                        <svg class="w-12 h-12 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M12.02 0c6.614.011 11.98 5.383 11.98 12 0 6.623-5.376 12-12 12-6.623 0-12-5.377-12-12 0-6.617 5.367-11.989 11.981-12h.039z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-6 text-gray-800 dark:text-white">Web Development</h4>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+                        Creating responsive and user-friendly websites with modern technologies.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-white dark:bg-gray-800 px-8 py-16 rounded-2xl border-b-4 border-blue-500 shadow-sm hover:shadow-2xl transition-all duration-300 text-center group flex flex-col items-center justify-center min-h-[480px]">
+                    <div
+                        class="p-4 rounded-xl bg-blue-50 dark:bg-blue-900/30 text-blue-600 mb-8 group-hover:rotate-12 transition-transform">
+                        <svg class="w-12 h-12 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M24 5c-3.923 3.265-5.623 4.716-7.15 4.716-2.44 0-3.681-3.675-4.85-7.716-1.165 4.028-2.41 7.715-4.853 7.715-1.513 0-3.168-1.404-7.147-4.715 3.321 7.018 3 14.292 3 17h18c0-1.718-.478-9.65 3-17z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-6 text-gray-800 dark:text-white">Machine Learning</h4>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+                        Developing intelligent algorithms and data-driven solutions to tackle complex problems.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-white dark:bg-gray-800 px-8 py-16 rounded-2xl border-b-4 border-purple-500 shadow-sm hover:shadow-2xl transition-all duration-300 text-center group flex flex-col items-center justify-center min-h-[480px]">
+                    <div
+                        class="p-4 rounded-xl bg-purple-50 dark:bg-purple-900/30 text-purple-600 mb-8 group-hover:rotate-12 transition-transform">
+                        <svg class="w-12 h-12 fill-current" viewBox="0 0 24 24">
+                            <path d="M24 23h-24v-21h24v21zm-20-1v-4h-3v4h3z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-6 text-gray-800 dark:text-white">Video Editing</h4>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+                        Crafting compelling visual stories through creative techniques and precise editing.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="portofolios" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="mb-12">
+                <h3 class="text-blue-600 font-semibold uppercase tracking-widest text-sm">My Works</h3>
+                <h1 class="text-4xl font-bold mt-2">Featured Portofolios</h1>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div
+                    class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300">
+                    <div class="overflow-hidden">
+                        <img src="./images/portofolios/figure4.jpg" alt="Machine Learning"
+                            class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="text-xl font-bold">Machine Learning</h4>
+                            <a href="https://github.com/Reyyzzz24/Machine-Learning"
+                                class="text-blue-600 hover:text-blue-800 transition">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex space-x-2 overflow-x-auto no-scrollbar mb-4">
+                            <span
+                                class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 text-[10px] font-bold uppercase rounded-full whitespace-nowrap">Machine
+                                Learning</span>
+                            <span
+                                class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 text-[10px] font-bold uppercase rounded-full whitespace-nowrap">Data
+                                Science</span>
+                            <span
+                                class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 text-[10px] font-bold uppercase rounded-full whitespace-nowrap">TensorFlow</span>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                            These are some machine learning projects I worked on at university, applying various
+                            techniques to real-world problems.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300">
+                    <div class="overflow-hidden">
+                        <img src="./images/portofolios/figure2.jpg" alt="Web & Mobile"
+                            class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="text-xl font-bold">Web & Mobile App</h4>
+                            <a href="/" class="text-blue-600 hover:text-blue-800 transition">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex space-x-2 overflow-x-auto no-scrollbar mb-4">
+                            <span
+                                class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 text-[10px] font-bold uppercase rounded-full whitespace-nowrap">Web
+                                Dev</span>
+                            <span
+                                class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 text-[10px] font-bold uppercase rounded-full whitespace-nowrap">UI/UX</span>
+                            <span
+                                class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 text-[10px] font-bold uppercase rounded-full whitespace-nowrap">Mobile
+                                App</span>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                            Developed and deployed dynamic applications focusing on performance, security, and
+                            user-friendly design.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300">
+                    <div class="overflow-hidden">
+                        <img src="./images/portofolios/figure6.jpg" alt="Video Editing"
+                            class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="text-xl font-bold">Video Editing</h4>
+                            <a href="portofolio-video.html" class="text-blue-600 hover:text-blue-800 transition">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex space-x-2 overflow-x-auto no-scrollbar mb-4">
+                            <span
+                                class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 text-[10px] font-bold uppercase rounded-full whitespace-nowrap">Premiere
+                                Pro</span>
+                            <span
+                                class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 text-[10px] font-bold uppercase rounded-full whitespace-nowrap">Motion
+                                Graphics</span>
+                            <span
+                                class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 text-[10px] font-bold uppercase rounded-full whitespace-nowrap">VFX</span>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                            Cinematic films and animations, showcasing my skills in editing, animation, and visual
+                            storytelling.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300">
+                    <div class="overflow-hidden">
+                        <img src="./images/portofolios/figure7.webp" alt="Game Project"
+                            class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="text-xl font-bold">Game Project</h4>
+                            <a href="https://github.com/Reyyzzz24/Game-Project"
+                                class="text-blue-600 hover:text-blue-800 transition">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex space-x-2 overflow-x-auto no-scrollbar mb-4">
+                            <span
+                                class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 text-[10px] font-bold uppercase rounded-full whitespace-nowrap">Game
+                                Dev</span>
+                            <span
+                                class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 text-[10px] font-bold uppercase rounded-full whitespace-nowrap">Unity</span>
+                            <span
+                                class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 text-[10px] font-bold uppercase rounded-full whitespace-nowrap">GML</span>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                            Pixel game projects using GameMaker, focusing on 2D mechanics, AI, and interactive gameplay.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300">
+                    <div class="overflow-hidden">
+                        <img src="./images/portofolios/figure8.jpg" alt="Design & Photography"
+                            class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="text-xl font-bold">Design & Photography</h4>
+                            <a href="design&photography.html" class="text-blue-600 hover:text-blue-800 transition">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex space-x-2 overflow-x-auto no-scrollbar mb-4">
+                            <span
+                                class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 text-[10px] font-bold uppercase rounded-full whitespace-nowrap">Graphic
+                                Design</span>
+                            <span
+                                class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 text-[10px] font-bold uppercase rounded-full whitespace-nowrap">Photography</span>
+                            <span
+                                class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 text-[10px] font-bold uppercase rounded-full whitespace-nowrap">Photoshop</span>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                            Exploring visual composition, branding, and creative storytelling through graphics and
+                            photography.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-gray-50 dark:bg-gray-800 py-20">
+        <div class="container mx-auto px-6">
+            <h3 class="text-blue-600 font-semibold uppercase tracking-widest text-sm text-center">Learning Path</h3>
+            <h1 class="text-4xl font-bold mt-2 mb-16 text-center">Skills & Education</h1>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+                <div class="space-y-0">
+                    <div class="flex gap-6">
+                        <div class="flex flex-col items-center">
+                            <div class="w-4 h-4 rounded-full bg-blue-600 shrink-0"></div>
+                            <div class="w-0.5 h-full bg-blue-200 dark:bg-gray-700"></div>
+                        </div>
+                        <div class="pb-10">
+                            <h4 class="text-xl font-bold leading-none">Djuanda University</h4>
+                            <p class="text-gray-600 dark:text-gray-400 mt-2">Bachelor's Degree - Computer Science</p>
+                            <p class="text-blue-600 font-semibold mt-1 text-sm">2022 - Now</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6">
+                        <div class="flex flex-col items-center">
+                            <div class="w-4 h-4 rounded-full bg-blue-600 shrink-0"></div>
+                            <div class="w-0.5 h-full bg-blue-200 dark:bg-gray-700"></div>
+                        </div>
+                        <div class="pb-10">
+                            <h4 class="text-xl font-bold leading-none">SMK Amaliah 1 Ciawi</h4>
+                            <p class="text-gray-600 dark:text-gray-400 mt-2">Vocational High School - Computer &
+                                Engineering</p>
+                            <p class="text-blue-600 font-semibold mt-1 text-sm">2018 - 2022</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6">
+                        <div class="flex flex-col items-center">
+                            <div class="w-4 h-4 rounded-full bg-blue-600 shrink-0"></div>
+                            <div class="w-0.5 h-0 bg-transparent"></div>
+                        </div>
+                        <div class="pb-10">
+                            <h4 class="text-xl font-bold leading-none">SMPN 1 Caringin</h4>
+                            <p class="text-gray-600 dark:text-gray-400 mt-2">Middle School</p>
+                            <p class="text-blue-600 font-semibold mt-1 text-sm">2015 - 2018</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+                        Over the past five years, I have learned and developed a wide range of skills, starting with
+                        both front-end and back-end development. This journey has equipped me with valuable expertise in
+                        various technologies. The skills I have acquired include:
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-8">
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span> HTML
+                            </li>
+                            <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span> CSS
+                            </li>
+                            <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span> PHP
+                            </li>
+                            <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span> Laravel
+                            </li>
+                        </ul>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span> Python
+                            </li>
+                            <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span> JavaScript
+                            </li>
+                            <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span> C++
+                            </li>
+                            <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span> SQL
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white dark:bg-gray-900">
+        <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+            <div class="contact-left">
+                <form action="https://formspree.io/f/xrbgknkv" method="POST" class="space-y-4">
+                    <div>
+                        <input type="text" placeholder="Name" name="name"
+                            class="w-full p-4 rounded-lg bg-gray-100 dark:bg-gray-800 border-transparent focus:border-blue-600 focus:bg-white dark:focus:bg-gray-700 focus:ring-2 focus:ring-blue-600 outline-none transition-all">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email" name="email"
+                            class="w-full p-4 rounded-lg bg-gray-100 dark:bg-gray-800 border-transparent focus:border-blue-600 focus:bg-white dark:focus:bg-gray-700 focus:ring-2 focus:ring-blue-600 outline-none transition-all">
+                    </div>
+                    <div>
+                        <textarea name="message" id="message" cols="30" rows="8" placeholder="Message"
+                            class="w-full p-4 rounded-lg bg-gray-100 dark:bg-gray-800 border-transparent focus:border-blue-600 focus:bg-white dark:focus:bg-gray-700 focus:ring-2 focus:ring-blue-600 outline-none transition-all resize-none"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit"
+                            class="w-full bg-blue-600 text-white font-bold py-4 rounded-lg hover:bg-blue-700 transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-blue-500/50">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact-right space-y-10">
+
+                <div class="flex items-start gap-5">
+                    <div class="p-4 bg-blue-50 dark:bg-blue-900/30 rounded-2xl text-blue-600 shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M12 1c-3.148 0-6 2.553-6 5.702 0 3.148 2.602 6.907 6 12.298 3.398-5.391 6-9.15 6-12.298 0-3.149-2.851-5.702-6-5.702zm0 8c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm8 6h-3.135c-.385.641-.798 1.309-1.232 2h3.131l.5 1h-4.264l-.344.544-.289.456h.558l.858 2h-7.488l.858-2h.479l-.289-.456-.343-.544h-2.042l-1.011-1h2.42c-.435-.691-.848-1.359-1.232-2h-3.135l-4 8h24l-4-8zm-12.794 6h-3.97l1.764-3.528 1.516 1.528h1.549l-.859 2zm8.808-2h3.75l1 2h-3.892l-.858-2z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold dark:text-white">Address</h4>
+                        <p class="text-gray-600 dark:text-gray-400 mt-1 leading-relaxed">
+                            Caringin, Bogor Regency, <br> West Java 16730
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-5">
+                    <div class="p-4 bg-blue-50 dark:bg-blue-900/30 rounded-2xl text-blue-600 shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M5 3.461c0 .978.001 16.224 0 17.213-.002 2.214 3.508 3.326 7.014 3.326 3.495 0 6.986-1.105 6.986-3.326v-17.213c0-2.348-3.371-3.461-6.805-3.461-3.563 0-7.195 1.199-7.195 3.461zm7-1.461c.276 0 .5.223.5.5 0 .276-.224.5-.5.5s-.5-.224-.5-.5c0-.277.224-.5.5-.5zm0 20c-.552 0-1-.448-1-1 0-.553.448-1 1-1s1 .447 1 1c0 .552-.448 1-1 1zm5-3h-10v-15h10v15z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold dark:text-white">Phone</h4>
+                        <p class="text-gray-600 dark:text-gray-400 mt-1">+6295885978036</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-5">
+                    <div class="p-4 bg-blue-50 dark:bg-blue-900/30 rounded-2xl text-blue-600 shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold dark:text-white">Email</h4>
+                        <p class="text-gray-600 dark:text-gray-400 mt-1">revayuliansatria@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 text-center">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-center items-center space-x-6 mb-8">
+                <a href="https://www.instagram.com/reyulians._/?utm_source=ig_web_button_share_sheet"
+                    class="group p-3 bg-gray-50 dark:bg-gray-800 rounded-full text-gray-400 hover:text-pink-600 hover:bg-pink-50 dark:hover:bg-pink-900/20 transition-all duration-300"
+                    aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                </a>
+
+                <a href="https://id.linkedin.com/in/reva-yulian-satria-74114930b"
+                    class="group p-3 bg-gray-50 dark:bg-gray-800 rounded-full text-gray-400 hover:text-blue-700 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300"
+                    aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                    </svg>
+                </a>
+
+                <a href="https://www.youtube.com/@reyzonly8541"
+                    class="group p-3 bg-gray-50 dark:bg-gray-800 rounded-full text-gray-400 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 transition-all duration-300"
+                    aria-label="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                    </svg>
+                </a>
+
+                <a href="https://github.com/Reyyzzz24"
+                    class="group p-3 bg-gray-50 dark:bg-gray-800 rounded-full text-gray-400 hover:text-black dark:hover:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300"
+                    aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+            </div>
+
+            <p class="text-xs md:text-sm text-gray-500 uppercase tracking-widest font-medium">
+                &#169; 2024 made by Reva Yulian Satria
+            </p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

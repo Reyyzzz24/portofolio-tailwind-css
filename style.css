@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  /* Font Family */
+  --font-roboto: "Roboto", sans-serif;
+
+  /* Brand Colors */
+  --color-primary-text: #232e35;
+  --color-secondary-text: #656d72;
+  --color-brand: #7e74f1;
+  --color-brand-hover: #5d51e8;
+  --color-border-custom: #f1f1f1;
+  
+  /* Backgrounds */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #fbfbfb;
+  --color-bg-third: #f5f3fe;
+
+  /* Dark Mode Palette */
+  --color-dark-bg: #121212;
+  --color-dark-bg-sec: #1e1e1e;
+  --color-dark-bg-third: #252525;
+  --color-dark-text: #e0e0e0;
+  --color-dark-text-sec: #b0b0b0;
+  --color-dark-border: #333333;
+}
+
+/* Custom Utilities yang tidak ada di tailwind (seperti hide-scrollbar) */
+@utility scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+@custom-variant dark (&:where(.dark, .dark *));
