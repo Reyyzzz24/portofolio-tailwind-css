@@ -6,166 +6,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design & Photography | Reva Yulian</title>
     <link href="./output.css" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-        }
-    </script>
 </head>
 
-<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300 antialiased">
 
     <div id="navbar-placeholder"></div>
 
-    <section id="services" class="pt-32 pb-20">
-        <div class="services container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h3 class="pre-title text-blue-600 font-semibold uppercase tracking-[0.3em] text-sm">MY</h3>
-                <h1 class="section-title services-title text-4xl md:text-5xl font-bold mt-2">Design & Layout</h1>
+    <section id="services" class="pt-32 pb-24 bg-white dark:bg-gray-900">
+        <div class="container mx-auto px-6 md:px-12 max-w-7xl">
+            <div class="text-center mb-20">
+                <h3 class="text-blue-600 font-semibold uppercase tracking-[0.4em] text-xs mb-3">Portfolio</h3>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">Design & Layout</h1>
+                <div class="h-1.5 w-20 bg-blue-600 mx-auto mt-6 rounded-full"></div>
             </div>
 
-            <div class="grid-3-services grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <div
-                    class="service group bg-gray-50 dark:bg-gray-800/50 rounded-2xl overflow-hidden border-b-4 border-blue-500 flex flex-col transition-all duration-500 hover:shadow-2xl">
-                    <div class="design-container h-64 overflow-hidden">
-                        <img src="https://ar-hosting.pages.dev/1740927219082.jpg" alt="Design 1"
-                            class="design-thumbnail w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in">
+                    class="group bg-gray-50 dark:bg-gray-800/40 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="https://ar-hosting.pages.dev/1740927219082.jpg" alt="Minimalist Poster"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in"
+                            onclick="openLightbox(this.src)">
                     </div>
-                    <div class="p-8 flex-grow flex flex-col justify-center items-center text-center">
-                        <h4 class="text-xl font-bold mb-4">Minimalist Poster</h4>
+                    <div class="p-8 text-center">
+                        <span
+                            class="inline-block px-3 py-1 text-[10px] font-bold tracking-widest uppercase bg-blue-100 dark:bg-blue-900/30 text-blue-600 rounded-full mb-4">Branding</span>
+                        <h4 class="text-xl font-bold mb-3">Minimalist Poster</h4>
                         <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">A modern minimalist poster
                             design with clean typography.</p>
                     </div>
                 </div>
 
                 <div
-                    class="service group bg-gray-50 dark:bg-gray-800/50 rounded-2xl overflow-hidden border-b-4 border-green-500 flex flex-col transition-all duration-500 hover:shadow-2xl">
-                    <div class="design-container h-64 overflow-hidden">
-                        <img src="https://ar-hosting.pages.dev/1740927218274.jpg" alt="Design 2"
-                            class="design-thumbnail w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in">
+                    class="group bg-gray-50 dark:bg-gray-800/40 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="https://ar-hosting.pages.dev/1740927218274.jpg" alt="Social Media Banner"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in"
+                            onclick="openLightbox(this.src)">
                     </div>
-                    <div class="p-8 flex-grow flex flex-col justify-center items-center text-center">
-                        <h4 class="text-xl font-bold mb-4">Social Media Banner</h4>
+                    <div class="p-8 text-center">
+                        <span
+                            class="inline-block px-3 py-1 text-[10px] font-bold tracking-widest uppercase bg-green-100 dark:bg-green-900/30 text-green-600 rounded-full mb-4">Marketing</span>
+                        <h4 class="text-xl font-bold mb-3">Social Media Banner</h4>
                         <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">A vibrant social media
                             banner designed for promotional content.</p>
                     </div>
                 </div>
 
                 <div
-                    class="service group bg-gray-50 dark:bg-gray-800/50 rounded-2xl overflow-hidden border-b-4 border-purple-500 flex flex-col transition-all duration-500 hover:shadow-2xl">
-                    <div class="design-container h-64 overflow-hidden">
-                        <img src="https://ar-hosting.pages.dev/1740927219888.jpg" alt="Design 3"
-                            class="design-thumbnail w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in">
+                    class="group bg-gray-50 dark:bg-gray-800/40 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="https://ar-hosting.pages.dev/1740927219888.jpg" alt="Product Packaging"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in"
+                            onclick="openLightbox(this.src)">
                     </div>
-                    <div class="p-8 flex-grow flex flex-col justify-center items-center text-center">
-                        <h4 class="text-xl font-bold mb-4">Product Packaging</h4>
+                    <div class="p-8 text-center">
+                        <span
+                            class="inline-block px-3 py-1 text-[10px] font-bold tracking-widest uppercase bg-purple-100 dark:bg-purple-900/30 text-purple-600 rounded-full mb-4">Packaging</span>
+                        <h4 class="text-xl font-bold mb-3">Product Packaging</h4>
                         <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">A sleek product packaging
                             concept emphasizing brand identity.</p>
                     </div>
                 </div>
 
                 <div
-                    class="service group bg-gray-50 dark:bg-gray-800/50 rounded-2xl overflow-hidden border-b-4 border-yellow-500 flex flex-col transition-all duration-500 hover:shadow-2xl">
-                    <div class="design-container h-64 overflow-hidden">
-                        <img src="https://ar-hosting.pages.dev/1740927226326.jpg" alt="Design 4"
-                            class="design-thumbnail w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in">
+                    class="group bg-gray-50 dark:bg-gray-800/40 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="https://ar-hosting.pages.dev/1740927226326.jpg" alt="Typography Experiment"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in"
+                            onclick="openLightbox(this.src)">
                     </div>
-                    <div class="p-8 flex-grow flex flex-col justify-center items-center text-center">
-                        <h4 class="text-xl font-bold mb-4">Typography Experiment</h4>
+                    <div class="p-8 text-center">
+                        <span
+                            class="inline-block px-3 py-1 text-[10px] font-bold tracking-widest uppercase bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 rounded-full mb-4">Artistic</span>
+                        <h4 class="text-xl font-bold mb-3">Typography Experiment</h4>
                         <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">An artistic typography
                             design exploring creative letterforms.</p>
                     </div>
                 </div>
 
                 <div
-                    class="service group bg-gray-50 dark:bg-gray-800/50 rounded-2xl overflow-hidden border-b-4 border-pink-500 flex flex-col transition-all duration-500 hover:shadow-2xl">
-                    <div class="design-container h-64 overflow-hidden">
-                        <img src="https://ar-hosting.pages.dev/1740927228041.jpg" alt="Design 5"
-                            class="design-thumbnail w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in">
+                    class="group bg-gray-50 dark:bg-gray-800/40 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="https://ar-hosting.pages.dev/1740927228041.jpg" alt="UI/UX Concept"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in"
+                            onclick="openLightbox(this.src)">
                     </div>
-                    <div class="p-8 flex-grow flex flex-col justify-center items-center text-center">
-                        <h4 class="text-xl font-bold mb-4">UI/UX Concept</h4>
+                    <div class="p-8 text-center">
+                        <span
+                            class="inline-block px-3 py-1 text-[10px] font-bold tracking-widest uppercase bg-pink-100 dark:bg-pink-900/30 text-pink-600 rounded-full mb-4">Interface</span>
+                        <h4 class="text-xl font-bold mb-3">UI/UX Concept</h4>
                         <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">A user interface and
                             experience design for a mobile app.</p>
                     </div>
                 </div>
 
                 <div
-                    class="service group bg-gray-50 dark:bg-gray-800/50 rounded-2xl overflow-hidden border-b-4 border-indigo-500 flex flex-col transition-all duration-500 hover:shadow-2xl">
-                    <div class="design-container h-64 overflow-hidden">
-                        <img src="https://ar-hosting.pages.dev/1740927228934.jpg" alt="Design 6"
-                            class="design-thumbnail w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in">
+                    class="group bg-gray-50 dark:bg-gray-800/40 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="https://ar-hosting.pages.dev/1740927228934.jpg" alt="Brand Identity"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in"
+                            onclick="openLightbox(this.src)">
                     </div>
-                    <div class="p-8 flex-grow flex flex-col justify-center items-center text-center">
-                        <h4 class="text-xl font-bold mb-4">Brand Identity</h4>
+                    <div class="p-8 text-center">
+                        <span
+                            class="inline-block px-3 py-1 text-[10px] font-bold tracking-widest uppercase bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 rounded-full mb-4">Corporate</span>
+                        <h4 class="text-xl font-bold mb-3">Brand Identity</h4>
                         <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">A cohesive brand identity
-                            design including logo and branding elements.</p>
+                            design including logo and branding.</p>
                     </div>
                 </div>
 
                 <div
-                    class="service group bg-gray-50 dark:bg-gray-800/50 rounded-2xl overflow-hidden border-b-4 border-red-500 flex flex-col transition-all duration-500 hover:shadow-2xl">
-                    <div class="design-container h-64 overflow-hidden">
-                        <img src="https://ar-hosting.pages.dev/1740927220691.jpg" alt="Design 7"
-                            class="design-thumbnail w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in">
+                    class="group bg-gray-50 dark:bg-gray-800/40 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="https://ar-hosting.pages.dev/1740927220691.jpg" alt="Business Card"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in"
+                            onclick="openLightbox(this.src)">
                     </div>
-                    <div class="p-8 flex-grow flex flex-col justify-center items-center text-center">
-                        <h4 class="text-xl font-bold mb-4">Business Card</h4>
+                    <div class="p-8 text-center">
+                        <span
+                            class="inline-block px-3 py-1 text-[10px] font-bold tracking-widest uppercase bg-red-100 dark:bg-red-900/30 text-red-600 rounded-full mb-4">Stationery</span>
+                        <h4 class="text-xl font-bold mb-3">Business Card</h4>
                         <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">A professional business card
                             layout with modern aesthetics.</p>
                     </div>
                 </div>
 
                 <div
-                    class="service group bg-gray-50 dark:bg-gray-800/50 rounded-2xl overflow-hidden border-b-4 border-cyan-500 flex flex-col transition-all duration-500 hover:shadow-2xl">
-                    <div class="design-container h-64 overflow-hidden">
-                        <img src="https://ar-hosting.pages.dev/1740927227210.jpg" alt="Design 8"
-                            class="design-thumbnail w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in">
+                    class="group bg-gray-50 dark:bg-gray-800/40 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="https://ar-hosting.pages.dev/1740927227210.jpg" alt="Infographic"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in"
+                            onclick="openLightbox(this.src)">
                     </div>
-                    <div class="p-8 flex-grow flex flex-col justify-center items-center text-center">
-                        <h4 class="text-xl font-bold mb-4">Infographic</h4>
+                    <div class="p-8 text-center">
+                        <span
+                            class="inline-block px-3 py-1 text-[10px] font-bold tracking-widest uppercase bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 rounded-full mb-4">Data</span>
+                        <h4 class="text-xl font-bold mb-3">Infographic</h4>
                         <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">A visually engaging
                             infographic with clear data representation.</p>
                     </div>
                 </div>
 
                 <div
-                    class="service group bg-gray-50 dark:bg-gray-800/50 rounded-2xl overflow-hidden border-b-4 border-orange-500 flex flex-col transition-all duration-500 hover:shadow-2xl">
-                    <div class="design-container h-64 overflow-hidden">
-                        <img src="https://ar-hosting.pages.dev/1740927222290.jpg" alt="Design 9"
-                            class="design-thumbnail w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in">
+                    class="group bg-gray-50 dark:bg-gray-800/40 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="https://ar-hosting.pages.dev/1740927222290.jpg" alt="Magazine Cover"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in"
+                            onclick="openLightbox(this.src)">
                     </div>
-                    <div class="p-8 flex-grow flex flex-col justify-center items-center text-center">
-                        <h4 class="text-xl font-bold mb-4">Magazine Cover</h4>
+                    <div class="p-8 text-center">
+                        <span
+                            class="inline-block px-3 py-1 text-[10px] font-bold tracking-widest uppercase bg-orange-100 dark:bg-orange-900/30 text-orange-600 rounded-full mb-4">Editorial</span>
+                        <h4 class="text-xl font-bold mb-3">Magazine Cover</h4>
                         <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">A bold and stylish magazine
-                            cover layout.</p>
+                            cover layout design.</p>
                     </div>
                 </div>
 
                 <div
-                    class="service group bg-gray-50 dark:bg-gray-800/50 rounded-2xl overflow-hidden border-b-4 border-emerald-500 flex flex-col transition-all duration-500 hover:shadow-2xl">
-                    <div class="design-container h-64 overflow-hidden">
-                        <img src="https://ar-hosting.pages.dev/1740927261624.jpg" alt="Design 10"
-                            class="design-thumbnail w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in">
+                    class="group bg-gray-50 dark:bg-gray-800/40 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="https://ar-hosting.pages.dev/1740927261624.jpg" alt="Nature Layout"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in"
+                            onclick="openLightbox(this.src)">
                     </div>
-                    <div class="p-8 flex-grow flex flex-col justify-center items-center text-center">
-                        <h4 class="text-xl font-bold mb-4">Nature Layout</h4>
+                    <div class="p-8 text-center">
+                        <span
+                            class="inline-block px-3 py-1 text-[10px] font-bold tracking-widest uppercase bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 rounded-full mb-4">Nature</span>
+                        <h4 class="text-xl font-bold mb-3">Nature Layout</h4>
                         <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">A visually refreshing design
                             inspired by the beauty of nature.</p>
                     </div>
                 </div>
 
                 <div
-                    class="service group bg-gray-50 dark:bg-gray-800/50 rounded-2xl overflow-hidden border-b-4 border-rose-500 flex flex-col transition-all duration-500 hover:shadow-2xl">
-                    <div class="design-container h-64 overflow-hidden">
-                        <img src="https://ar-hosting.pages.dev/1740927867946.jpg" alt="Design 11"
-                            class="design-thumbnail w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in">
+                    class="group bg-gray-50 dark:bg-gray-800/40 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="https://ar-hosting.pages.dev/1740927867946.jpg" alt="Movie Poster"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-zoom-in"
+                            onclick="openLightbox(this.src)">
                     </div>
-                    <div class="p-8 flex-grow flex flex-col justify-center items-center text-center">
-                        <h4 class="text-xl font-bold mb-4">Movie Poster</h4>
+                    <div class="p-8 text-center">
+                        <span
+                            class="inline-block px-3 py-1 text-[10px] font-bold tracking-widest uppercase bg-rose-100 dark:bg-rose-900/30 text-rose-600 rounded-full mb-4">Cinema</span>
+                        <h4 class="text-xl font-bold mb-3">Movie Poster</h4>
                         <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">A modern movie poster layout
-                            with expressive brush textures.</p>
+                            with expressive textures.</p>
                     </div>
                 </div>
 
@@ -173,124 +202,216 @@
         </div>
     </section>
 
-    <section id="photography" class="py-20 bg-gray-50 dark:bg-gray-800/30">
-        <div class="services main-container container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h3 class="pre-title text-blue-600 font-semibold uppercase tracking-[0.3em] text-sm">MY</h3>
-                <h1 class="section-title services-title text-4xl md:text-5xl font-bold mt-2">Photography</h1>
+    <section id="photography" class="py-24 bg-gray-50 dark:bg-gray-800/20">
+        <div class="container mx-auto px-6 md:px-12 max-w-7xl">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <h3 class="text-blue-600 font-semibold uppercase tracking-[0.4em] text-xs mb-2">Visual Arts</h3>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">Photography</h1>
+                </div>
+                <p class="text-gray-500 dark:text-gray-400 max-w-md text-sm leading-relaxed">
+                    Capturing moments through the lens, exploring light, and telling stories without words.
+                </p>
             </div>
 
-            <div
-                class="grid-5-photography grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 max-w-7xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740928494502.jpg" alt="Photography 1"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740928492475.jpg" alt="Photography 2"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740928490612.jpg" alt="Photography 3"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740928491516.jpg" alt="Photography 4"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740928493501.jpg" alt="Photography 5"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740928500844.jpg" alt="Photography 6"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740928498814.jpg" alt="Photography 7"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740928499757.jpg" alt="Photography 8"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740928501839.jpg" alt="Photography 9"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740928502748.jpg" alt="Photography 10"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740928503648.jpg" alt="Photography 11"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740928504579.jpg" alt="Photography 12"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740928512036.jpg" alt="Photography 13"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740928507699.jpg" alt="Photography 14"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740928506572.jpg" alt="Photography 15"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740928505481.jpg" alt="Photography 16"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740929511965.jpg" alt="Photography 17"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740929512766.jpg" alt="Photography 18"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740929514184.jpg" alt="Photography 19"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740929450951.jpg" alt="Photography 20"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740929450046.jpg" alt="Photography 21"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="photo-item overflow-hidden rounded-lg shadow-sm">
+                <div class="aspect-square overflow-hidden rounded-2xl shadow-sm group relative bg-gray-200">
                     <img src="https://ar-hosting.pages.dev/1740929452956.jpg" alt="Photography 22"
-                        class="photo-thumbnail w-full h-64 object-cover hover:scale-110 hover:opacity-80 transition-all duration-500 cursor-zoom-in">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 cursor-zoom-in"
+                        onclick="openLightbox(this.src)">
+                    <div
+                        class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    </div>
                 </div>
 
             </div>
@@ -347,13 +468,27 @@
         </div>
     </footer>
 
-    <div id="lightbox" class="fixed inset-0 z-[100] hidden bg-black/95 flex-items-center justify-center p-4">
-        <button class="absolute top-6 right-6 text-white text-4xl hover:text-gray-400"
+    <div id="lightbox"
+        class="fixed inset-0 z-[100] hidden bg-black/95 backdrop-blur-sm flex items-center justify-center p-6"
+        onclick="closeLightbox()">
+        <button class="absolute top-8 right-8 text-white/50 text-5xl hover:text-white transition-colors"
             onclick="closeLightbox()">&times;</button>
-        <img id="lightboxImg" src="" class="max-w-full max-h-[90vh] shadow-2xl rounded-sm">
+        <img id="lightboxImg" src="" class="max-w-full max-h-[85vh] shadow-2xl rounded-lg object-contain">
     </div>
 
     <script src="scripts/main.js"></script>
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightboxImg').src = src;
+            document.getElementById('lightbox').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
 </body>
 
 </html>
