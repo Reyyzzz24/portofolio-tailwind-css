@@ -1,6 +1,6 @@
 /**
  * MAIN JAVASCRIPT - RY Portfolio
- * Menangani: Navbar Fetch, Dark Mode, Burger Menu, & Video Player
+ * Menangani: Navbar Fetch, Dark Mode, Burger Menu, Resume Dropdown & Video Player
  */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -11,9 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(response => response.text())
             .then(data => {
                 navbarPlaceholder.innerHTML = data;
+                
                 // Inisialisasi fitur SETELAH elemen HTML navbar masuk ke DOM
                 initThemeToggle();
                 initBurgerMenu();
+                initResumeDropdown(); // Fungsi baru untuk dropdown resume mobile
             })
             .catch(err => console.error("Gagal memuat navbar:", err));
     }
@@ -62,13 +64,11 @@ function initBurgerMenu() {
         const isClosed = mobileNav.classList.contains('translate-x-full');
 
         if (isClosed) {
-            // Buka: Geser Kanan ke Kiri
             mobileNav.classList.remove('translate-x-full', 'invisible');
             mobileNav.classList.add('translate-x-0', 'visible');
             if (overlay) overlay.classList.remove('opacity-0', 'pointer-events-none');
             body.classList.add('overflow-hidden');
         } else {
-            // Tutup: Geser Kiri ke Kanan
             mobileNav.classList.add('translate-x-full', 'invisible');
             mobileNav.classList.remove('translate-x-0', 'visible');
             if (overlay) overlay.classList.add('opacity-0', 'pointer-events-none');
@@ -76,11 +76,13 @@ function initBurgerMenu() {
         }
 
         // Animasi Burger Ikon
-        burger.querySelector('.line-1').classList.toggle('rotate-45');
-        burger.querySelector('.line-1').classList.toggle('translate-y-2');
-        burger.querySelector('.line-2').classList.toggle('opacity-0');
-        burger.querySelector('.line-3').classList.toggle('-rotate-45');
-        burger.querySelector('.line-3').classList.toggle('-translate-y-2');
+        const l1 = burger.querySelector('.line-1');
+        const l2 = burger.querySelector('.line-2');
+        const l3 = burger.querySelector('.line-3');
+        
+        if(l1) { l1.classList.toggle('rotate-45'); l1.classList.toggle('translate-y-2'); }
+        if(l2) { l2.classList.toggle('opacity-0'); }
+        if(l3) { l3.classList.toggle('-rotate-45'); l3.classList.toggle('-translate-y-2'); }
     }
 
     burger.onclick = toggleMenu;
@@ -93,8 +95,38 @@ function initBurgerMenu() {
     });
 }
 
+// --- FUNGSI DROPDOWN RESUME MOBILE ---
+function initResumeDropdown() {
+    const btn = document.getElementById('resumeBtnMobile');
+    const dropdown = document.getElementById('resumeDropdownMobile');
+    const arrow = document.getElementById('resumeArrow');
+
+    if (btn && dropdown) {
+        btn.onclick = (e) => {
+            e.stopPropagation();
+            
+            const isClosed = dropdown.classList.contains('max-h-0');
+
+            if (isClosed) {
+                // BUKA
+                dropdown.classList.remove('max-h-0', 'opacity-0', 'border-transparent', 'dark:border-transparent');
+                dropdown.classList.add('max-h-60', 'opacity-100', 'border-gray-100', 'dark:border-gray-700');
+                
+                // Animasi Panah Berputar
+                if(arrow) arrow.classList.add('rotate-180');
+            } else {
+                // TUTUP
+                dropdown.classList.add('max-h-0', 'opacity-0', 'border-transparent', 'dark:border-transparent');
+                dropdown.classList.remove('max-h-60', 'opacity-100', 'border-gray-100', 'dark:border-gray-700');
+                
+                // Kembalikan Panah
+                if(arrow) arrow.classList.remove('rotate-180');
+            }
+        };
+    }
+}
+
 // --- FUNGSI KHUSUS HALAMAN VIDEO ---
-// Fungsi ini dipanggil langsung dari HTML (onclick)
 function playVideo(container) {
     const thumbnail = container.querySelector('.thumbnail');
     const iframe = container.querySelector('iframe');

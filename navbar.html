@@ -1,7 +1,7 @@
 <header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
         <div class="text-3xl font-bold tracking-tighter">
-            <a href="/" class="text-blue-600 dark:text-blue-400">RY</a>
+            <a href="index.html" class="text-blue-600 dark:text-blue-400">RY</a>
         </div>
 
         <nav class="hidden md:block">
@@ -11,15 +11,20 @@
                 <li><a href="#skills" class="hover:text-blue-600 transition">Skills</a></li>
                 <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
                 <li>
-                    <button id="themeToggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+                    <button id="themeToggle"
+                        class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition">
                         <img id="themeIcon" src="images/icons/dark.svg" alt="Theme" class="w-5 h-5 dark:invert">
                     </button>
                 </li>
                 <li class="relative group">
-                    <button class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Resume</button>
-                    <div class="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                        <a href="resume-id.pdf" target="_blank" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">Resume Indonesia</a>
-                        <a href="resume-en.pdf" target="_blank" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">Resume English</a>
+                    <button
+                        class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Resume</button>
+                    <div
+                        class="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                        <a href="resume-id.pdf" target="_blank"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">Resume Indonesia</a>
+                        <a href="resume-en.pdf" target="_blank"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">Resume English</a>
                     </div>
                 </li>
             </ul>
@@ -32,17 +37,53 @@
         </div>
     </div>
 
-    <div id="navOverlay" class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-500 z-[50] md:hidden"></div>
+    <div id="navOverlay"
+        class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-500 z-[50] md:hidden">
+    </div>
 
-    <div id="mobileNav" class="fixed top-0 right-0 w-72 h-screen bg-white dark:bg-gray-900 z-[60] flex flex-col p-8 pt-24 space-y-6 text-xl font-medium shadow-2xl transition-all duration-500 translate-x-full invisible md:hidden">
-        <a href="#services" class="mobile-link hover:text-blue-600 transition border-b dark:border-gray-800 pb-2">Services</a>
-        <a href="#portofolios" class="mobile-link hover:text-blue-600 transition border-b dark:border-gray-800 pb-2">Portofolio</a>
-        <a href="#skills" class="mobile-link hover:text-blue-600 transition border-b dark:border-gray-800 pb-2">Skills</a>
-        <a href="#contact" class="mobile-link hover:text-blue-600 transition border-b dark:border-gray-800 pb-2">Contact</a>
-        
+    <div id="mobileNav"
+        class="fixed top-0 right-0 w-72 h-screen bg-white dark:bg-gray-900 z-[60] flex flex-col p-8 pt-24 space-y-6 text-xl font-medium shadow-2xl transition-all duration-500 translate-x-full invisible md:hidden overflow-y-auto">
+
+        <a href="#services"
+            class="mobile-link hover:text-blue-600 transition border-b dark:border-gray-800 pb-2">Services</a>
+        <a href="#portofolios"
+            class="mobile-link hover:text-blue-600 transition border-b dark:border-gray-800 pb-2">Portofolio</a>
+        <a href="#skills"
+            class="mobile-link hover:text-blue-600 transition border-b dark:border-gray-800 pb-2">Skills</a>
+        <a href="#contact"
+            class="mobile-link hover:text-blue-600 transition border-b dark:border-gray-800 pb-2">Contact</a>
+
+        <div class="pt-2">
+            <p class="text-sm text-gray-500 mb-4 uppercase tracking-widest">Documents</p>
+            <div class="relative">
+                <button id="resumeBtnMobile"
+                    class="w-full bg-blue-600 text-white p-4 rounded-xl flex items-center justify-between text-base transition-all duration-300">
+                    <span>Download Resume</span>
+                    <svg id="resumeArrow" xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 transition-transform duration-300 ease-in-out" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+
+                <div id="resumeDropdownMobile"
+                    class="flex flex-col mt-2 max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out bg-white dark:bg-gray-800 border border-transparent dark:border-transparent rounded-xl shadow-xl">
+                    <a href="resume-id.pdf" target="_blank"
+                        class="block px-4 py-4 text-base hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 border-b border-gray-100 dark:border-gray-700">
+                        Resume Indonesia
+                    </a>
+                    <a href="resume-en.pdf" target="_blank"
+                        class="block px-4 py-4 text-base hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                        Resume English
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <div class="pt-4">
             <p class="text-sm text-gray-500 mb-4 uppercase tracking-widest">Settings</p>
-            <button id="themeToggleMobile" class="flex items-center space-x-3 p-3 w-full rounded-xl bg-gray-100 dark:bg-gray-800 transition-colors">
+            <button id="themeToggleMobile"
+                class="flex items-center space-x-3 p-3 w-full rounded-xl bg-gray-100 dark:bg-gray-800 transition-colors">
                 <img src="images/icons/dark.svg" alt="Theme" class="w-6 h-6 dark:invert">
                 <span class="text-sm">Switch Theme</span>
             </button>
